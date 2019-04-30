@@ -21,7 +21,7 @@ body {
 /* ROOT FONT STYLES */
 
 * {
-  font-family: 'Lato', Helvetica, sans-serif;
+  font-family: Impact;
   color: #333447;
   line-height: 1.5;
 }
@@ -81,9 +81,12 @@ p {
 }
 
 .center {
+  font-size: xx-large;
+  font-family: Impact;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  background: url(Table_Mountain.jpg);
 }
 
 .justify {
@@ -96,6 +99,7 @@ p {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  display: grid;
 }
 
 .row {
@@ -107,6 +111,10 @@ p {
   float: left;
   margin: 0.5rem 2%;
   min-height: 0.125rem;
+}
+table, th, td{
+  border: 3px solid black;
+  border-collapse: collapse;
 }
 
 .col-1,
@@ -138,6 +146,7 @@ p {
 
 .col-4-sm {
   width: 29.33%;
+  float: left;
 }
 
 .col-5-sm {
@@ -175,7 +184,7 @@ p {
 .row::after {
 	content: "";
 	display: table;
-	clear: both;
+  clear: both;
 }
 
 .hidden-sm {
@@ -239,6 +248,9 @@ p {
 
   .hidden-sm {
     display: block;
+  }
+  .left {
+    float: left;
   }
 }
 
